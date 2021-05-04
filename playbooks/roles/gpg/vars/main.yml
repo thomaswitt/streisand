@@ -21,7 +21,7 @@ streisand_default_gpg_flags: "--no-default-keyring --keyring {{ streisand_gpg_ke
 # built into the GNUPG distribution, so we don't need to specify a CA cert
 # explicitly in a dirmngr config if we stick with this particular pool.
 # By default use HKP over HTTPS to the SKS Keyserver pool
-streisand_gpg_keyserver_address: "hkps://gpg.mozilla.org"
+streisand_gpg_keyserver_address: "hkp://pgp.surfnet.nl"
 
 # The default timeout is 30s, we use something larger
 streisand_gpg_timeout: "120"
